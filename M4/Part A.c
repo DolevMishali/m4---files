@@ -241,8 +241,8 @@ Student* readFromBinFile(const char* fileName)
 		newlist[i].numberOfCourses = numOfCourses;
 		for (int j = 0; j < numOfCourses; j++)
 		{
-			fread(&newlist[i].grades[i].courseName,1, sizeof(newlist[i].grades[i].courseName),fp);
-			fread(&newlist[i].grades[i].grade, 1, sizeof(newlist[i].grades[i].grade), fp);
+			fread(&newlist[i].grades[j].courseName,1, sizeof(newlist[i].grades[i].courseName),fp);
+			fread(&newlist[i].grades[j].grade, 1, sizeof(newlist[i].grades[i].grade), fp);
 		}
 	}
 	fclose(fp);
